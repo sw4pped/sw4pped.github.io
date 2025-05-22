@@ -1,0 +1,47 @@
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="follow, index, max-image-preview:large"/>
+  <meta property="og:image" content="https://kaniehuest.github.io/images/gatofondo.jpeg" />
+  <meta property="og:image:secure_url" content="https://kaniehuest.github.io/images/gatofondo.jpeg" />
+  <meta property="og:image:width" content="715" />
+  <meta property="og:image:height" content="500" />
+  <meta property="og:image:alt" content="gato" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://kaniehuest.github.io/images/gatofondo.jpeg" />
+  <link rel="image_src" href="https://kaniehuest.github.io/images/gatofondo.jpeg" />
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8ZB55F6VXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-8ZB55F6VXX');
+  </script>
+
+
+
+
+  <title>
+    {% if page.title %}
+      {{ page.title }}
+    {% else %}
+      {{ site.title }}
+    {% endif %}
+  </title>
+
+  {% seo title=false %}
+  {% feed_meta %}
+
+  <link rel="shortcut icon" type="image/x-icon" href="/{{ site.favicon | relative_url }}" />
+  <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}" />
+  {% if site.theme_config.appearance_toggle %}
+    {% include toggle_theme_js.html %}
+  {% endif %}
+
+  {%- include custom_head.html -%}
+</head>
