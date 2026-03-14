@@ -1,2 +1,3 @@
 User-agent: *
 Allow: /
+Sitemap: https://sw4pped.github.io/sitemap.xml
